@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Deletion Instructions | Personal Finance Assistant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.7;
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 0 22px;
+            color: #263238;
+            background: #f8fafc;
+        }
+        main {
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+        }
+        h1, h2 { color: #17365d; }
+        footer {
+            margin-top: 35px;
+            padding-top: 18px;
+            border-top: 1px solid #ddd;
+            color: #64748b;
+            font-size: 14px;
+        }
+        code {
+            background: #f1f5f9;
+            padding: 3px 6px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <h1>Data Deletion Instructions</h1>
+    <p><strong>Personal Finance Assistant</strong></p>
+    <p>Last updated: November 17, 2026</p>
+
+    <h2>1. About Data Deletion</h2>
+    <p>
+        Personal Finance Assistant is a personal financial
+        management application that processes WhatsApp messages
+        to record income and expenses.
+    </p>
+    <p>
+        Financial records and WhatsApp message processing records
+        are stored in a local SQLite database on the computer
+        running the application.
+    </p>
+
+    <h2>2. Data That Can Be Deleted</h2>
+    <p>
+        The application database may contain:
+    </p>
+    <ul>
+        <li>Personal income and expense transaction records.</li>
+        <li>Transaction amounts, categories, dates, and notes.</li>
+        <li>WhatsApp message identifiers (WAMID).</li>
+        <li>WhatsApp message processing statuses.</li>
+        <li>Links between WhatsApp messages and transaction records.</li>
+        <li>Account, category, and application user information.</li>
+    </ul>
+
+    <h2>3. How to Delete Locally Stored Data</h2>
+    <p>
+        The application user can delete all locally stored
+        application data by following these steps:
+    </p>
+    <ol>
+        <li>Close the Personal Finance Assistant desktop application.</li>
+        <li>Stop the running WhatsApp webhook server and Cloudflare Tunnel.</li>
+        <li>Open Windows File Explorer.</li>
+        <li>Enter the following location in the address bar:
+            <br><code>%APPDATA%\Keuangan</code>
+        </li>
+        <li>Delete the application data folder and its contents
+            to remove the local database and stored backups.</li>
+    </ol>
+
+    <p>
+        The default database location is
+        <code>%APPDATA%\Keuangan\finance.db</code>.
+        Local backups are stored in the application's
+        <code>backups</code> directory.
+    </p>
+
+    <h2>4. Alternative Data Locations</h2>
+    <p>
+        If the application is configured to use a custom data
+        directory through the KEUANGAN_DATA_DIR environment
+        variable, the user must delete the database and backups
+        from that configured location instead.
+    </p>
+    <p>
+        If the application is running in portable mode,
+        its data may be located in the application's
+        <code>data</code> directory.
+    </p>
+
+    <h2>5. Important Information</h2>
+    <p>
+        Deleting the application data directory removes all
+        financial records, user information, WhatsApp message
+        processing records, and local backups stored there.
+    </p>
+    <p>
+        This operation is permanent unless an independent
+        backup exists. Users should export any records they
+        wish to retain before deleting the database.
+    </p>
+    <p>
+        Deleting locally stored application data does not
+        automatically delete information retained by Meta
+        or WhatsApp under their respective services and
+        retention policies. Users should manage such
+        information separately through the relevant services.
+    </p>
+
+    <h2>6. Confirmation of Deletion</h2>
+    <p>
+        After deleting the application data directory,
+        the user can verify that the database file and
+        local backup files are no longer present.
+    </p>
+
+    <h2>7. Contact</h2>
+    <p>
+        For questions about data deletion, contact the
+        application administrator through the designated
+        private communication channel used to operate
+        Personal Finance Assistant.
+    </p>
+
+    <footer>
+        &copy; 2026 Personal Finance Assistant.
+        All rights reserved.
+    </footer>
+</main>
+</body>
+</html>
