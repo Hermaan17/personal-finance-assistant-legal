@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Personal Finance Assistant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.7;
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 0 22px;
+            color: #263238;
+            background: #f8fafc;
+        }
+        main {
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+        }
+        h1, h2 { color: #17365d; }
+        h1 { line-height: 1.3; }
+        footer {
+            margin-top: 35px;
+            padding-top: 18px;
+            border-top: 1px solid #ddd;
+            color: #64748b;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <h1>Privacy Policy</h1>
+    <p><strong>Personal Finance Assistant</strong></p>
+    <p>Last updated: November 17, 2026</p>
+
+    <h2>1. Introduction</h2>
+    <p>
+        Personal Finance Assistant is a personal financial management
+        application designed to help its user record and manage
+        personal income and expenses through a desktop application
+        and WhatsApp integration.
+    </p>
+    <p>
+        This Privacy Policy explains what information is processed,
+        how it is used, where it is stored, and how the user can
+        request deletion of their information.
+    </p>
+
+    <h2>2. Information We Process</h2>
+    <p>The application may process the following information:</p>
+    <ul>
+        <li>WhatsApp phone number used to communicate with the application.</li>
+        <li>WhatsApp message identifiers (WAMID) used to identify
+            messages and prevent duplicate transactions.</li>
+        <li>Text messages submitted for financial transaction recording.</li>
+        <li>Transaction amounts, income or expense types, categories,
+            notes, and transaction dates.</li>
+        <li>Internal transaction identifiers and message processing statuses.</li>
+    </ul>
+
+    <h2>3. How Information Is Used</h2>
+    <p>Information is processed for the following purposes:</p>
+    <ul>
+        <li>To identify authorized WhatsApp message senders.</li>
+        <li>To interpret transaction information submitted by the user.</li>
+        <li>To record income and expenses in the financial database.</li>
+        <li>To prevent duplicate transaction recording.</li>
+        <li>To provide transaction confirmation messages through WhatsApp.</li>
+        <li>To maintain the functionality and security of the application.</li>
+    </ul>
+
+    <h2>4. Data Storage</h2>
+    <p>
+        Financial transaction records are stored in a local SQLite
+        database on the computer running the desktop application.
+        The default Windows storage location is the application's
+        Keuangan data directory under the user's AppData folder.
+    </p>
+    <p>
+        The application stores transaction details and WhatsApp
+        message identifiers, processing statuses, and related
+        transaction identifiers. The original message body is used
+        for processing and is not stored as a separate raw message
+        body in the WhatsApp message record.
+    </p>
+    <p>
+        Database backups may also be created in the application's
+        local backup directory.
+    </p>
+
+    <h2>5. Third-Party Services</h2>
+    <p>
+        The application integrates with Meta WhatsApp Cloud API
+        to receive and send WhatsApp messages.
+        Meta may process message information in accordance with
+        its own terms and privacy policies.
+    </p>
+    <p>
+        Cloudflare Tunnel may be used to route incoming webhook
+        requests to the computer running the application.
+        Network requests may therefore be processed through
+        Cloudflare infrastructure.
+    </p>
+    <p>
+        These services operate under their respective privacy
+        policies and terms of service.
+    </p>
+
+    <h2>6. Data Sharing</h2>
+    <p>
+        The application does not sell personal information or
+        financial transaction records.
+    </p>
+    <p>
+        Information may be processed by the third-party service
+        providers described in this policy as necessary to
+        operate WhatsApp messaging and webhook connectivity.
+    </p>
+
+    <h2>7. Data Security</h2>
+    <p>
+        The application uses webhook signature verification,
+        authorized sender restrictions, and duplicate message
+        detection to help protect its functionality.
+    </p>
+    <p>
+        Database security also depends on the security of the
+        computer, operating system, user account, and any
+        local backups.
+    </p>
+
+    <h2>8. Data Retention and Deletion</h2>
+    <p>
+        Transaction records remain in the local database until
+        they are deleted by the user or the database is removed.
+        WhatsApp message identifiers and processing records
+        are also retained in the local database.
+    </p>
+    <p>
+        Users may request assistance with deleting their data
+        by contacting the application administrator through
+        the private communication channel used to operate
+        the application.
+    </p>
+    <p>
+        See the Data Deletion Instructions page for further
+        information.
+    </p>
+
+    <h2>9. Children's Privacy</h2>
+    <p>
+        This application is intended for personal financial
+        management and is not designed to collect personal
+        information from children.
+    </p>
+
+    <h2>10. Changes to This Policy</h2>
+    <p>
+        This Privacy Policy may be updated when application
+        functionality, data processing practices, or applicable
+        requirements change. The latest version will be
+        published on this page.
+    </p>
+
+    <h2>11. Contact</h2>
+    <p>
+        For privacy questions or data-related requests,
+        contact the application administrator through the
+        private communication channel used to operate
+        Personal Finance Assistant.
+    </p>
+
+    <footer>
+        &copy; 2026 Personal Finance Assistant.
+        All rights reserved.
+    </footer>
+</main>
+</body>
+</html>
